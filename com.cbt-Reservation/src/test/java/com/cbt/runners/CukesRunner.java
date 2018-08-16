@@ -1,4 +1,4 @@
-package runners;
+package com.cbt.runners;
 
 import org.junit.runner.RunWith;
 

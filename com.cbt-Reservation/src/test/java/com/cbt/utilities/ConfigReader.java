@@ -1,4 +1,4 @@
-package utilities;
+package com.cbt.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;

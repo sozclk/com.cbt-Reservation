@@ -1,4 +1,4 @@
-package utilities;
+package com.cbt.utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
