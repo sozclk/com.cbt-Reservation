@@ -15,9 +15,9 @@ import cucumber.api.junit.Cucumber;
 		},
 		
 		features="src/test/resources/features",
-		glue="stepDefinitions"
-		//tags = "@temp" ,
-		//dryRun = true;
+		glue="com.cbt.stepDefinitions",
+		tags = "@temp" 
+//		, dryRun = true
 		)
 
 

@@ -7,9 +7,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
-		
-	
-	
+
 	private Driver() {	
 	}
 	
@@ -30,7 +28,8 @@ public class Driver {
 			WebDriverManager.iedriver().setup();
 			driver= new InternetExplorerDriver();
 			break;
-		}}
+		}
+		}
 		return driver;
 	}
 	public static  void closeDriver() {
