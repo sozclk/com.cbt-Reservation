@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin= {
-				//"pretty" ,
+				"pretty" ,
 				"html:target/cucumber-report", 
 				"json:target/cucumber.json"
 				
