@@ -14,4 +14,9 @@ public class FreeSpotsPage {
 	
 	@FindBy(xpath="//button[@class='button is-transparent is-white']")
 	public WebElement firstBookButton;
+	
+	@FindBy(xpath="//div[@class='card-content is-transparent']")
+	public WebElement firstRoomBox;
+	
+	
 }
