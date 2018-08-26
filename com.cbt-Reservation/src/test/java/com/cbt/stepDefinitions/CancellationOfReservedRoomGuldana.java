@@ -68,6 +68,7 @@ public class CancellationOfReservedRoomGuldana {
 		WebElement firstSlot = Driver.getDriver().findElement(By.xpath(xpath));
 		wait.until(ExpectedConditions.visibilityOf(firstSlot));
 		
+		
 	}
 
 	@Then("user should able to click on cancel conference button")
