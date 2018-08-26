@@ -73,5 +73,6 @@ public class CancellationOfReservedRoomGuldana {
 	@Then("user should able to click on cancel conference button")
 	public void user_should_able_to_click_on_cancel_conference_button() {
 		schedulePage.cancelConferenceBtn.click(); 
+		//added comments
 	}
 }
