@@ -38,4 +38,7 @@ public class MapPage {
 	
 	@FindBy(id="room-217")
 	public WebElement facebookRoom;
+	
+	@FindBy(className="title")
+	public WebElement locationBtn;
 }

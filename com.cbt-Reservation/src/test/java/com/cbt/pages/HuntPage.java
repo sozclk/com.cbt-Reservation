@@ -24,4 +24,5 @@ public class HuntPage {
 	@FindBy(xpath="//p[@class='control']//button[@type='submit']")
 	public WebElement search;
 	
+	
 }
