@@ -1,6 +1,10 @@
 package com.cbt.pages;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -41,4 +45,20 @@ public class MapPage {
 	
 	@FindBy(className="title")
 	public WebElement locationBtn;
+	
+	
+	@FindAll({@FindBy(xpath = "//app-map-il//a")})
+	public List<WebElement> ReservableRooms;
+	
+	public List<WebElement> chooseReservableRoom(String room) {
+		
+		List<WebElement> result = new ArrayList<WebElement>();
+		
+		for(WebElement each:ReservableRooms) {
+			if(each.getText().equalsIgnoreCase(room)) {
+				result.add(each);
+			}
+		}
+		return result;
+	}
 }

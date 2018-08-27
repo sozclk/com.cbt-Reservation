@@ -11,4 +11,19 @@ Scenario: Team leader is able to reserve room (Positive)
 	When a team leader clicks on hunt button
 	Then the team leader should be able to reserve a room
 	
+	@asel
+Scenario Outline: visibility of study room reservations
+    Given user on the main page
+    When user should see the 6 study room names on the map
+    And user clicks on any room from "<roomnames>"
+    Then user should see the reservations for the current date
+    
+    Examples:
+    |roomnames|
+    |google| 
+    |apple|
+    |microsoft|
+    |amazon|
+    |tesla| 
+    |facebook |
 	
