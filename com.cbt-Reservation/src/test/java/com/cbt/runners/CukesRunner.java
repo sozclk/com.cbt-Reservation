@@ -1,4 +1,4 @@
-package runners;
+package com.cbt.runners;
 
 import org.junit.runner.RunWith;
 
@@ -8,16 +8,16 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		plugin= {
-				//"pretty" ,
+				"pretty" ,
 				"html:target/cucumber-report", 
 				"json:target/cucumber.json"
 				
 		},
 		
 		features="src/test/resources/features",
-		glue="stepDefinitions"
-		//tags = "@temp" ,
-		//dryRun = true;
+		glue="com.cbt.stepDefinitions",
+		tags = "@temp" 
+		, dryRun = true
 		)
 
 
