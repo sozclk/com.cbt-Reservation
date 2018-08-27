@@ -51,22 +51,17 @@
 
 	<dependencies>
 
-
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
 			<version>3.0.2</version>
 		</dependency>
-
-
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>3.0.2</version>
 			<scope>test</scope>
 		</dependency>
-
-
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -85,9 +80,23 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-
-
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+		<dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.4</version>
+        </dependency>
 	</dependencies>
 
+	<repositories>
+		<repository>
+			<id>oracle</id>
+			<url>https://datanucleus.org/download/maven2</url>
+		</repository>
+	</repositories>
 
 </project>
