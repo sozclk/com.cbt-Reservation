@@ -11,7 +11,7 @@ public class BookingConfirmationPage {
 	public BookingConfirmationPage() {
 		PageFactory.initElements(Driver.getDriver(), this);	
 	}
-	
+	//
 	@FindBy(xpath="//button")
 	public WebElement confirmButton;
 }
